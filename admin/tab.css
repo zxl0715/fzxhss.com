@@ -1,0 +1,35 @@
+*
+{font-size: 12px; 
+   
+    }
+	
+	
+	.tableBorder {
+	WIDTH: 100%;
+	BACKGROUND-COLOR: #E4E4E4;
+	border: 1px solid #000;
+}
+
+    
+    a:link{
+	color:#990000;
+	text-decoration:none;
+}
+a:visited{
+	color:#990000;
+	text-decoration:none;
+}
+a:hover{
+	color:#FF0000;
+	text-decoration:underline;
+}
+
+
+
+
+
+TD.forumRowHighlight { padding:3px;BACKGROUND-COLOR: #fff;}
+
+	
+	    
+	    

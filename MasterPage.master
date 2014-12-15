@@ -1,0 +1,173 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>福州兴辉盛世文化传播有限公司</title>
+    <meta http-equiv="content-Type" content="text/html; charset=gb2312" />
+    <meta name="keywords" content="福州兴辉盛世文化传播有限公司 福州展览公司 福州展会公司 福州广告设计公司 福州广告传媒 福州晚会布置 福州活动策划 福州策划公司 福州展览展示 会议组织 策划 展览展示设计 公司企业形象策划设计 礼仪庆典活动 展示工程建造 室内装饰设计 主场展示服务 企业巡展 精确贸易配对 活动策划 信息交流" />
+    <meta name="Description" content=" 福州兴辉盛世文化传播有限公司是拥有一支精通会展项目策划、运营与管理的专业团队，是专业从事组织、策划、承办国内外大型展览、会议及展览设计搭建的会展服务机构。" />
+    <meta name="copyright" content="福州兴辉盛世文化传播有限公司" />
+    <meta name="author" content="福州兴辉盛世文化传播有限公司" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/LogoSmall.png" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/portal.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/nav.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="230" height="4" bgcolor="#ef8201"></td>
+                <td width="758" height="4" bgcolor="#ef8201"><%--ef8201 002760 --%></td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top" background="images/index_04.jpg" style="height: 82px">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="404" rowspan="2">
+                                <div class="logo"></div>
+                            </td>
+                            <td rowspan="2">&nbsp;</td>
+                            <td style="width: 200px; height: 30px; text-align: center; background-image: url(images/index_06.jpg)">
+                                <a href="javascript:void(0);" class="ClolorWhite" style="font-size: 14px;">服务热线：0591-86257085</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; height: 45px;">
+                                <a onclick="SetHome(this,window.location)" href="javascript:void(0)">设为首页</a>
+                                | <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <td height="30" colspan="2" background="images/index_09.jpg">
+                <div id="nav">
+                    <ul>
+                        <li class='active'><a href="index.html">首　页<span>HOME</span></a></li>
+                        <div class="n"></div>
+                        <li><a href="about.html">公司简介<span>ABOUT US</span></a></li>
+                        <div class="n"></div>
+                        <li><a href="pro.html">案例展示<span>PRODUCT</span></a></li>
+                        <div class="n"></div>
+                        <li><a href="about8.html">展览工厂<span>FACTORY</span></a></li>
+                        <div class="n"></div>
+                        <li><a href="contactus.html">行业信息<span>INDURING</span></a></li>
+                        <div class="n"></div>
+                        <li><a href="newsPage.html">新闻中心<span>NEWS</span></a> </li>
+                        <div class="n"></div>
+                        <li><a href="server.html">服务项目<span>SERVICES</span></a></li>
+                        <div class="n"></div>
+                        <li><a href="jobPage.html">人才招聘<span>RECRUITMENT</span></a> </li>
+                        <div class="n"></div>
+                        <li><a href="contact.html">联系我们<span>CONTACT US</span></a></li>
+                    </ul>
+                </div>
+            </td>
+            <tr>
+                <td height="5" colspan="2" background="images/index_15.jpg"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td height="92" colspan="2" valign="top">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 14px;"></td>
+            </tr>
+            <tr>
+
+
+                <td colspan="2" style="text-align: center;">
+                    <div style="text-align: center">版权所有  福州兴辉盛世文化传播有限公司</div>
+                    <div style="text-align: center">地址(Add)：福州市鼓楼区五一中路18号正大广场御景台12F</div>
+                    <div style="text-align: center">
+                        电话(Tel)：0591-86257085&nbsp;&nbsp;13348251420   <a target="_blank" href="http://www.miibeian.gov.cn">闽ICP备14015065号-1 </a>
+
+                        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1253285719'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1253285719%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+                    </div>
+                    <div style="text-align: center">
+
+                        <a href="http://webscan.360.cn/index/checkwebsite/url/www.fzxhss.com">
+                            <img style="width: 127px; height: 47px;" border="0" src="http://img.webscan.360.cn/status/pai/hash/0de91e18f9ea9c8c90088345ab042457" /></a>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">&nbsp;
+                </td>
+            </tr>
+        </table>
+
+        <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": ["copy", "mshare", "tsina", "weixin", "tqq", "qzone", "tqf", "bdysc", "renren", "bdhome"], "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "slide": { "type": "slide", "bdImg": "0", "bdPos": "right", "bdTop": "29.5" }, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+        <%--右侧悬浮在线客服Begin--%>
+        <div id="online_qq_layer">
+            <div id="online_qq_tab">
+                <a id="floatShow" style="display: block;" href="javascript:void(0);">收缩</a>
+                <a id="floatHide" style="display: none;" href="javascript:void(0);">展开</a>
+            </div>
+            <div id="onlineService">
+                <div class="onlineMenu">
+                    <h3 class="tQQ">QQ在线客服</h3>
+                    <ul>
+                        <li class="tli zixun">公司业务部</li>
+                        <li><span><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=24206285&site=qq&menu=yes'>
+                            <img border='0' src='http://wpa.qq.com/pa?p=2:24206285:41 &amp;r=0.22914223582483828' alt='点击这里'>
+                        </a></span>
+                        </li>
+                        <li><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2991265863&site=qq&menu=yes'>
+                            <img border='0' src='http://wpa.qq.com/pa?p=2:2991265863:41 &amp;r=0.22914223582483828' alt='点击这里'>
+                        </a>
+                        </li>
+                        <li class="tli fufei">展览项目部</li>
+                        <li><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=124743331&site=qq&menu=yes'>
+                            <img border='0' src='http://wpa.qq.com/pa?p=2:124743331:41 &amp;r=0.22914223582483828' alt='点击这里'>
+                        </a>
+                        </li>
+                        <li class="tli fufei">品牌项目部</li>
+                        <li><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=201427540&site=qq&menu=yes'>
+                            <img border='0' src='http://wpa.qq.com/pa?p=2:201427540:41 &amp;r=0.22914223582483828' alt='点击这里'>
+                        </a>
+                        </li>
+                        <li class="tli fufei">工厂工程部</li>
+                        <li><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=124743331&site=qq&menu=yes'>
+                            <img border='0' src='http://wpa.qq.com/pa?p=2:124743331:41 &amp;r=0.22914223582483828' alt='点击这里'>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wyzx">
+                    <div style="background: url(images/right_float_web.png) no-repeat; height: 50px;">
+                        <h3 class="tele">电话咨询</h3>
+                        <ul>
+                            <li class="telephone">0591-86257085</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="onlineMenu">
+                    <div class="logoCode"></div>
+                </div>
+                <div class="btmbg"></div>
+            </div>
+        </div>
+        <%--右侧悬浮在线客服End--%>
+    </form>
+</body>
+</html>
